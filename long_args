@@ -15,7 +15,6 @@ long_args(){
         opt=$OPTARG
         FLAG_TYPE="--"
         echo OPT:${opt}
-        echo 1:${1}
         if [[ ${opt} = *=* ]]
         then
             FLAG=$(echo ${opt} |cut -f 1 -d "=")
